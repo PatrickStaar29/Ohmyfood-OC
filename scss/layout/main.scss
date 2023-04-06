@@ -1,0 +1,35 @@
+/*****Reservation*/
+.reservation{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F7F7F7;
+    &__emplacement{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+        gap: 17px;
+        background-color: #EAEAEA;
+    }
+    &__titre{
+        padding-top: 39.5px;
+        margin: auto;
+        height: 68px;
+        width: 275px;
+    }
+    &__sous-titre{
+        margin: auto;
+        height: 46px;
+        width: 315px;
+        padding-bottom: 27px;
+    }
+}
+
+.fonctionnement{
+    height: 440px;
+    padding: 48px 20px 68px 20px ;
+}

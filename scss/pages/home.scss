@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.body__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+    box-sizing: border-box;
+}

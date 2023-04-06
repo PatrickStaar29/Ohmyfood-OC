@@ -6,31 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand|Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./asset/css/style.css">
-
+        <script src="https://kit.fontawesome.com/53b69502b1.js" crossorigin="anonymous"></script>
         <title>Ohmyfood</title>
     </head>
 
-    <body>
-        <header>
-            <img src="/Asset/Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="titre du site">
+    <body class="body__container">
+        <header class="header">
+            <a href="#" class="header__logo">Ohmyfood</a>
         </header>
         <main>
-            <section>
-                <!-- Ajouter la partie "Paris, Belleville" -->
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Dévouvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <p>Explorer nos restaurants</p>
+            <section class="reservation">
+                <div class="reservation__emplacement">
+                    <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                    <p>Paris, Belleville</p>
+                </div>
+                <h1 class="reservation__titre">Réservez le menu qui vous convient</h1>
+                <p class="reservation__sous-titre">Dévouvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button class="boutton__reservation">
+                    <span>Explorer nos restaurants</span>
+                </button>
             </section>
-            <section>
+            <section class="fonctionnement">
                 <h2>Fonctionnement</h2>
+                <div>
+                    <i>Choisissez un restaurant</i>
+                </div>
             
             </section>
-            <section>
+            <section class="restaurant">
                 <h2>Restaurants</h2>
-                <div>
-                    <article>
+                <div class="restaurant__grid">
+                    <article class="restaurant__carte">
                         <a href="#">
                             <img src="/asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                             <div>
@@ -39,7 +47,7 @@
                             </div>
                         </a>
                     </article>
-                    <article>
+                    <article class="restaurant__carte">
                         <a href="#">
                             <img src="/asset/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
                             <div>
@@ -48,7 +56,7 @@
                             </div>
                         </a>
                     </article>
-                    <article>
+                    <article class="restaurant__carte">
                         <a href="#">
                             <img src="/asset/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
                             <div>
@@ -57,7 +65,7 @@
                             </div>
                         </a>
                     </article>
-                    <article>
+                    <article class="restaurant__carte">
                         <a href="#">
                             <img src="/asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
                             <div>
