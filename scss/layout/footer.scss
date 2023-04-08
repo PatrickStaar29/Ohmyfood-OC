@@ -1,0 +1,30 @@
+.footer{
+    padding: 25px 0 22px 25px;
+    background-color: #353535;
+    & h2{
+        color: white;
+        font-family: 'Shrikhand', italic;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: 17px;
+    }
+    &__placement{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__placement a{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__texte{
+        display: flex;
+        gap: 10px;
+    }
+}
+

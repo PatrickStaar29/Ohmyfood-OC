@@ -5,9 +5,13 @@ body {
 }
 
 .body__container{
-    display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 375px;
     box-sizing: border-box;
+}
+
+h1, h2, h3, p, a, i{
+    text-decoration: none;
+    color: #000000;
 }

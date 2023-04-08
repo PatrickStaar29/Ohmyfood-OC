@@ -32,4 +32,19 @@
 .fonctionnement{
     height: 440px;
     padding: 48px 20px 68px 20px ;
+
+    &__titre{
+        margin: 0;
+        padding-bottom: 26px;
+    }
+    &__placement{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        background-color: #EAEAEA;
+        border-radius: 10px;
+        gap: 25px;
+        
+    }
 }

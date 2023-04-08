@@ -3,6 +3,10 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
+.fa-utensils, .fa-handshake-angle {
+  width: 13px;
+}
+
 .boutton__reservation {
   margin: auto;
   margin-bottom: 57px;
@@ -17,22 +21,51 @@ main {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+/*****Restaurant*****/
 .restaurant {
   background-color: #f7f7f7;
+  padding: 54px 0 66px 0;
+}
+.restaurant__titre {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0;
 }
 .restaurant__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 0;
+  justify-items: center;
+  gap: 18px;
 }
 .restaurant__carte {
   height: 251px;
   width: 340px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .restaurant__carte img {
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
   height: 174px;
   width: 100%;
+}
+
+.restaurant-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 0 16px 13px;
+}
+.restaurant-texte__texte-titre {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurant-texte__texte-sous-titre {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 .header {
@@ -88,6 +121,49 @@ main {
   height: 440px;
   padding: 48px 20px 68px 20px;
 }
+.fonctionnement__titre {
+  margin: 0;
+  padding-bottom: 26px;
+}
+.fonctionnement__placement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  background-color: #EAEAEA;
+  border-radius: 10px;
+  gap: 25px;
+}
+
+.footer {
+  padding: 25px 0 22px 25px;
+  background-color: #353535;
+}
+.footer h2 {
+  color: white;
+  font-family: "Shrikhand", italic;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 17px;
+}
+.footer__placement {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__placement a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.footer__texte {
+  display: flex;
+  gap: 10px;
+}
 
 body {
   display: flex;
@@ -96,11 +172,15 @@ body {
 }
 
 .body__container {
-  display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 375px;
   box-sizing: border-box;
+}
+
+h1, h2, h3, p, a, i {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

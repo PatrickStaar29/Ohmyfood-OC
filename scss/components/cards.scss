@@ -1,18 +1,49 @@
+/*****Restaurant*****/
+
 .restaurant{
     background-color: #f7f7f7;
+    padding: 54px 0 66px 0;
+    &__titre{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
     &__grid{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 0;   
+        justify-items: center;
+        gap: 18px;   
     }
     &__carte{
         height: 251px;
         width: 340px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     }
     &__carte img{
         object-fit: cover;
+        border-radius: 15px 15px 0 0;
         height: 174px;
         width: 100%;
+    }
+}
+
+.restaurant-texte{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 16px 0 16px 13px;
+
+    &__texte-titre{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__texte-sous-titre{
+        margin: 0;
+        font-size: 17px;
+        font-weight: 300;
     }
 }
 
