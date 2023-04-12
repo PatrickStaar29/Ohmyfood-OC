@@ -1,0 +1,60 @@
+/*****Menu******/
+.main__image{
+    object-fit: cover;
+    width: 375px;
+    height: 275px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: -55px;
+    background-color: #F7F7F7;
+    height:auto;
+    border-radius: 40px 40px 0 0;
+    padding: 0 13px;
+    position: relative;
+    z-index: 1;
+    &__titre-principal{
+        padding: 31px 0 40px 5px;
+        font-size: 28px;
+        font-weight: 400;
+        font-family: 'Shrikhand', italic;
+    }
+    &__placement{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 40px;
+    }
+}
+
+.menu{
+    &__titre-catégorie{
+        border-bottom: 3px solid $vert-pastel;
+        width: 40px;
+        height: 27px;
+    }
+    &__carte{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 45px;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 12px 15px;
+    }
+    &__titre{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__sous-titre{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    &__prix{
+        display: flex;
+        justify-content: flex-end;
+        transform: translateY(-19px);
+    }
+}
