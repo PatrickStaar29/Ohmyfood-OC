@@ -306,6 +306,11 @@ h1, h2, h3, p, a, i {
   position: relative;
   z-index: 1;
 }
+.menu__titre-placement {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 .menu__titre-principal {
   padding: 31px 0 40px 5px;
   font-size: 28px;
@@ -338,13 +343,14 @@ h1, h2, h3, p, a, i {
   font-weight: 700;
 }
 .menu__sous-titre {
+  display: flex;
+  justify-content: space-between;
   font-size: 15px;
   font-weight: 300;
 }
 .menu__prix {
-  display: flex;
-  justify-content: flex-end;
-  transform: translateY(-19px);
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

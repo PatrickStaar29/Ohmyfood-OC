@@ -15,6 +15,11 @@
     padding: 0 13px;
     position: relative;
     z-index: 1;
+    &__titre-placement{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
     &__titre-principal{
         padding: 31px 0 40px 5px;
         font-size: 28px;
@@ -49,12 +54,13 @@
         font-weight: 700;
     }
     &__sous-titre{
+        display: flex;
+        justify-content: space-between;
         font-size: 15px;
         font-weight: 300;
     }
     &__prix{
-        display: flex;
-        justify-content: flex-end;
-        transform: translateY(-19px);
+        font-size: 18px;
+        font-weight: 700;
     }
 }
