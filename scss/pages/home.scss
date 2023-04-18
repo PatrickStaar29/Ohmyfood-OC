@@ -7,11 +7,19 @@ body {
 .body__container{
     flex-direction: column;
     width: 100%;
-    max-width: 375px;
     box-sizing: border-box;
 }
 
-h1, h2, h3, p, a, i{
-    text-decoration: none;
-    margin: 0;
-}
+@media only screen and (min-width: 768px) {
+    /* styles pour tablette */
+    .body__container{
+        max-width: 1024px;
+    }
+    }
+
+@media only screen and (min-width: 1024px) {
+    /* styles pour bureau */
+    .body__container{
+        max-width: 1440px;
+    }
+    }

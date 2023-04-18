@@ -32,6 +32,12 @@
         gap: 12px;
         padding-bottom: 40px;
     }
+    &__carte-placement{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 14px; 
+    }
 }
 
 .menu{
@@ -42,12 +48,12 @@
     }
     &__carte{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: white;
-        height: 45px;
+        overflow: hidden;
+        height: 66px;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
-        padding: 12px 15px;
     }
     &__titre{
         font-size: 18px;
@@ -64,3 +70,26 @@
         font-weight: 700;
     }
 }
+
+.aqwx{
+    width: 59px;
+    border-radius: 0 15px 15px 0;
+    background: $vert-pastel;
+    margin-right: -59px;
+}
+
+.menu__carte:hover .aqwx{
+    margin-right: 0px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* styles pour tablette */
+    }
+
+@media only screen and (min-width: 1024px) {
+    /* styles pour bureau */
+    .main__image{
+        width: 100%;
+    }
+    }
