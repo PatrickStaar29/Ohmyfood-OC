@@ -2,6 +2,7 @@
     padding: 25px 0 22px 25px;
     background-color: #353535;
     & h2{
+        display: flex;
         color: white;
         font-family: 'Shrikhand', italic;
         font-size: 18px;
@@ -22,9 +23,46 @@
         color: white;
         font-family: 'Roboto', sans-serif;
     }
-    &__texte{
+    &__texte-icone{
         display: flex;
         gap: 10px;
     }
 }
 
+@media only screen and (min-width: 768px) {
+    /* styles pour tablette */
+}
+
+@media only screen and (min-width: 1024px) {
+    /* styles pour bureau */
+    .footer{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        padding: 30px;
+        gap: 16px;  
+        height: 54px;
+        & h2{
+            align-items: center;
+            height: 27px;
+            padding-bottom: 0px;
+        }
+        &__placement{
+            flex-direction: row;
+        }
+        &__placement a{
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+    }
+    .footer{
+        &__texte-icone{
+            width: 192px;
+        }
+        &__texte{
+            display: flex;
+            width: 130px;
+        }
+    }
+}

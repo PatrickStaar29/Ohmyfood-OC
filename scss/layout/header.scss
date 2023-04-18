@@ -10,13 +10,28 @@
     &__logo {
         height: 44px;
         color: black;
-        padding-top: 14px;
         font-size: 30px;
     }
     .fa-arrow-left{
+        display: flex;
+        align-items: center;
         position: absolute;
+        height: 100%;
         left: 0px;
+        top: 0;
         margin-left: 23px;
+        color: black;
     }
 
+}
+
+@media only screen and (min-width: 768px) {
+    /* styles pour tablette */
+}
+
+@media only screen and (min-width: 1024px) {
+    /* styles pour bureau */
+    .header{
+        box-shadow: none;
+    }
 }
