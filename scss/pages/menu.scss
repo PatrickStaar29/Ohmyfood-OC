@@ -26,6 +26,15 @@
         font-weight: 400;
         font-family: 'Shrikhand', italic;
     }
+    &__item{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        padding: 15px 14px; 
+    }
     &__placement{
         display: flex;
         flex-direction: column;
@@ -35,8 +44,9 @@
     &__carte-placement{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        padding-right: 20px;
         width: 100%;
-        padding: 15px 14px; 
     }
 }
 
@@ -58,10 +68,14 @@
     &__titre{
         font-size: 18px;
         font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &__sous-titre{
-        display: flex;
-        justify-content: space-between;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         font-size: 15px;
         font-weight: 300;
     }
@@ -86,6 +100,7 @@
 
 .menu__carte:hover .animation{
     margin-right: 0px;
+    cursor: pointer;
 }
 
 

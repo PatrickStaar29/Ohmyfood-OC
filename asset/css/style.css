@@ -436,6 +436,15 @@ body {
   font-weight: 400;
   font-family: "Shrikhand", italic;
 }
+.menu__item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding: 15px 14px;
+}
 .menu__placement {
   display: flex;
   flex-direction: column;
@@ -445,8 +454,9 @@ body {
 .menu__carte-placement {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  padding-right: 20px;
   width: 100%;
-  padding: 15px 14px;
 }
 
 .menu__titre-catégorie {
@@ -466,10 +476,14 @@ body {
 .menu__titre {
   font-size: 18px;
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__sous-titre {
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 15px;
   font-weight: 300;
 }
@@ -493,6 +507,7 @@ body {
 
 .menu__carte:hover .animation {
   margin-right: 0px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
