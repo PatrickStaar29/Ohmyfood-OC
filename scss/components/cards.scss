@@ -2,9 +2,9 @@
 
 .restaurant{
     background-color: #f7f7f7;
-    padding: 54px 0 66px 0;
+    padding: 54px 14px 66px 14px;
     &__titre{
-        padding-left: 20px;
+        padding-left: 6px;
         padding-bottom: 20px;
         margin: 0;
     }
@@ -16,7 +16,7 @@
     }
     &__carte{
         height: 251px;
-        width: 340px;
+        width: 100%;
         position: relative;
         background-color: white;
         border-radius: 15px;
@@ -77,6 +77,16 @@
 
 @media only screen and (min-width: 768px) {
     /* styles pour tablette */
+    .restaurant{
+        &__titre{
+            margin: auto;
+            width: 80%;
+        }
+        &__carte{
+            width: 80%;
+        }
+        
+    }
 }
 
 @media only screen and (min-width: 1024px) {
