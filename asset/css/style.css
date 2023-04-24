@@ -26,6 +26,7 @@ main {
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-direction: alternate-reverse;
 }
 .boutton__reservation:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -37,12 +38,12 @@ main {
   position: relative;
   color: black;
   font-size: 21px;
-  left: 14px;
+  left: 1px;
 }
 
 .restaurant__coeur-gradient {
   font-size: 21px;
-  right: 12px;
+  right: 25px;
   position: relative;
   color: transparent;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -69,6 +70,7 @@ main {
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-direction: alternate-reverse;
 }
 .boutton__menu:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -87,7 +89,7 @@ main {
 /*****Restaurant*****/
 .restaurant {
   background-color: #f7f7f7;
-  padding: 54px 14px 66px 14px;
+  padding: 54px 18px 66px 17px;
 }
 .restaurant__titre {
   padding-left: 6px;
@@ -112,6 +114,7 @@ main {
 .restaurant__carte img {
   display: block;
   object-fit: cover;
+  object-position: center 61%;
   border-radius: 15px 15px 0 0;
   height: 174px;
   width: 100%;
@@ -121,13 +124,14 @@ main {
   align-items: center;
   justify-content: center;
   position: absolute;
+  font-size: 14px;
   background-color: #99E2D0;
   color: #008766;
   border-radius: 2px;
   width: 80px;
   height: 29px;
-  right: 15px;
-  top: 15px;
+  right: 12px;
+  top: 13px;
 }
 
 .restaurant__placement {
@@ -141,17 +145,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 15px 0 15px 13px;
+  padding: 16px 0 12px 13px;
 }
 .restaurant-texte__texte-titre {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
+  height: 20px;
 }
 .restaurant-texte__texte-sous-titre {
   margin: 0;
   font-size: 17px;
   font-weight: 300;
+  height: 24px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -171,11 +177,12 @@ main {
   }
   .restaurant__titre {
     padding-left: 0px;
+    margin: 0;
   }
   .restaurant__grid {
     grid-template-columns: repeat(2, 2fr);
     row-gap: 50px;
-    column-gap: 90px;
+    column-gap: 100px;
     width: 100%;
     margin: auto;
   }
@@ -185,10 +192,61 @@ main {
     box-shadow: none;
   }
 }
+.custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: background-loader 5s linear 1 none;
+  animation-fill-mode: forwards;
+  z-index: 5;
+}
+.custom__loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(rgba(0, 0, 0, 0) 10%, #766DF4);
+  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 8px), #000 0);
+  animation: s3 5s linear 1 none;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-loader {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+  0% {
+    transform: rotate(0deg);
+    background-color: rgb(63, 0, 236);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1800deg);
+    opacity: 0;
+  }
+}
 .header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   height: 63px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -197,6 +255,7 @@ main {
 }
 .header__logo {
   height: 44px;
+  margin-bottom: 5px;
   color: black;
   font-size: 30px;
 }
@@ -217,7 +276,21 @@ main {
 @media only screen and (min-width: 1024px) {
   /* styles pour bureau */
   .header {
+    align-items: flex-start;
+    height: 96px;
     box-shadow: none;
+  }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    height: 34.2px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: black;
+    font-size: 34.2px;
+  }
+  .header .fa-arrow-left {
+    font-size: 30px;
   }
 }
 /*****Reservation*/
@@ -238,6 +311,9 @@ main {
   gap: 17px;
   background-color: #EAEAEA;
 }
+.reservation__emplacement-titre {
+  font-weight: 500;
+}
 .reservation__titre {
   padding-top: 39.5px;
   margin: auto;
@@ -249,6 +325,7 @@ main {
   height: 46px;
   width: 315px;
   padding-bottom: 27px;
+  font-size: 18px;
 }
 
 .fonctionnement {
@@ -276,6 +353,8 @@ main {
 }
 .fonctionnement__chiffre {
   display: flex;
+  align-items: center;
+  justify-content: center;
   translate: -12px 100%;
   margin: 0;
   background-color: #9356DC;
@@ -283,8 +362,7 @@ main {
   width: 24px;
   color: white;
   border-radius: 12px;
-  align-items: center;
-  justify-content: center;
+  font-size: 12px;
 }
 .fonctionnement__texte {
   display: flex;
@@ -327,7 +405,7 @@ main {
   }
 }
 .footer {
-  padding: 25px 0 22px 25px;
+  padding: 22px 0 22px 25px;
   background-color: #353535;
 }
 .footer h2 {
@@ -337,7 +415,7 @@ main {
   font-size: 18px;
   font-weight: 400;
   margin: 0;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 .footer__placement {
   text-decoration: none;
@@ -354,7 +432,7 @@ main {
 }
 .footer__texte-icone {
   display: flex;
-  gap: 10px;
+  gap: 11px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -448,7 +526,7 @@ body {
 }
 .menu__item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -499,7 +577,9 @@ body {
 .menu__titre-catégorie {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
-  height: 27px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 300;
 }
 .menu__carte {
   display: flex;
@@ -525,7 +605,7 @@ body {
   font-weight: 300;
 }
 .menu__prix {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -560,12 +640,21 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .main__image {
+    height: 383px;
+  }
   .menu {
-    width: 74%;
+    width: 62.2%;
     align-items: center;
   }
   .menu__placement {
     width: 634px;
+  }
+  .menu__titre-placement {
+    gap: 24px;
+  }
+  .menu__titre-principal {
+    padding: 51px 0 40px 0;
   }
 }
 .fa-location-dot {

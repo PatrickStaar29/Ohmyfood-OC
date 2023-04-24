@@ -1,5 +1,5 @@
 .footer{
-    padding: 25px 0 22px 25px;
+    padding: 22px 0 22px 25px;
     background-color: #353535;
     & h2{
         display: flex;
@@ -8,7 +8,7 @@
         font-size: 18px;
         font-weight: 400;
         margin: 0;
-        padding-bottom: 17px;
+        padding-bottom: 16px;
     }
     &__placement{
         text-decoration: none;
@@ -25,7 +25,7 @@
     }
     &__texte-icone{
         display: flex;
-        gap: 10px;
+        gap: 11px;
     }
 }
 

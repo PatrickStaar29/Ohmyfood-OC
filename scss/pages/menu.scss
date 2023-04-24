@@ -28,7 +28,7 @@
     }
     &__item{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -79,9 +79,11 @@
 
 .menu{
     &__titre-catégorie{
-        border-bottom: 3px solid $vert-pastel;
+        border-bottom: 3px solid #99E2D0;
         width: 40px;
-        height: 27px;
+        height: 24px;
+        font-size: 16px;
+        font-weight: 300;
     }
     &__carte{
         display: flex;
@@ -107,7 +109,7 @@
         font-weight: 300;
     }
     &__prix{
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 700;
     }
 }
@@ -146,12 +148,21 @@
             flex-direction: column;
             align-items: center;
         }
+        &__image{
+            height: 383px;
+        }
     }
     .menu{
-        width: 74%;
+        width: 62.2%;
         align-items: center;
         &__placement{
             width: 634px;
+        }
+        &__titre-placement{
+            gap: 24px;
+        }
+        &__titre-principal{
+            padding: 51px 0 40px 0;
         }
     }
 }

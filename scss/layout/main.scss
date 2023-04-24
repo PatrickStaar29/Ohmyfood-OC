@@ -15,6 +15,9 @@
         gap: 17px;
         background-color: #EAEAEA;
     }
+    &__emplacement-titre{
+        font-weight: 500;
+    }
     &__titre{
         padding-top: 39.5px;
         margin: auto;
@@ -26,6 +29,7 @@
         height: 46px;
         width: 315px;
         padding-bottom: 27px;
+        font-size: 18px;
     }
 }
 
@@ -54,6 +58,8 @@
     }
     &__chiffre{
         display: flex;
+        align-items: center;
+        justify-content: center;
         translate: -12px 100%;
         margin: 0;
         background-color: #9356DC;
@@ -61,8 +67,7 @@
         width: 24px;
         color: white;
         border-radius: 12px;
-        align-items: center;
-        justify-content: center;
+        font-size: 12px;
     } 
     &__texte{
         display: flex;
