@@ -6,21 +6,65 @@
     height: 100%;
     background-color: $violet;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     animation: background-loader 5s linear 1 none;
     animation-fill-mode: forwards;
     z-index: 5;
+    &__titre{
+        display: flex;
+        gap: 5px;
+        font-family: "Shrikhand", sans-serif;
+        font-size: 35px;
+    }
+    &__titre p{
+        
+        animation: Titre-loader infinite 0.35s alternate;
+    }
     &__loader {
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    background:conic-gradient(#0000 10%,#766DF4);
-    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
-    animation:s3 5s linear 1 none;
-    animation-fill-mode: forwards;
-  }
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        background:conic-gradient(#0000 10%,#766DF4);
+        -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+        animation:s3 5s linear 1 none;
+        animation-fill-mode: forwards;
+    }
 }
+
+.custom__titre p:nth-child(1) {
+    animation-delay: 0s;
+  }
+.custom__titre p:nth-child(2) {
+    animation-delay: 0.05s;
+}
+.custom__titre p:nth-child(3) {
+    animation-delay: 0.1s;
+}
+.custom__titre p:nth-child(4) {
+    animation-delay: 0.15s;
+}
+.custom__titre p:nth-child(5) {
+    animation-delay: 0.2s;
+  }
+.custom__titre p:nth-child(6) {
+    animation-delay: 0.25s;
+}
+.custom__titre p:nth-child(7) {
+    animation-delay: 0.3s;
+}
+.custom__titre p:nth-child(8) {
+    animation-delay: 0.35s;
+}  
+  
+
+@keyframes Titre-loader{
+    100%{
+        transform: translateY(-30px)
+    }
+}
+
 @keyframes background-loader{
         0% {
             opacity: 1;
