@@ -26,7 +26,6 @@ main {
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation-direction: alternate-reverse;
 }
 .boutton__reservation:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -198,33 +197,39 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #9356DC;
+  background: linear-gradient(320deg, #9356DC -11.44%, #FF79DA 123.93%);
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: background-loader 5s linear 1 none;
+  animation: background-loader 3s linear 1 none;
   animation-fill-mode: forwards;
   z-index: 5;
 }
 .custom__loader {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: conic-gradient(rgba(0, 0, 0, 0) 10%, #766DF4);
   -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 8px), #000 0);
-  animation: s3 5s linear 1 none;
+  animation: s3 3s linear 1 none;
   animation-fill-mode: forwards;
 }
 
 @keyframes background-loader {
   0% {
     opacity: 1;
+    z-index: 5;
   }
   60% {
     opacity: 1;
+    z-index: 5;
+  }
+  99% {
+    z-index: 5;
   }
   100% {
     opacity: 0;
+    z-index: -111;
   }
 }
 @keyframes s3 {
@@ -233,14 +238,20 @@ main {
   }
   0% {
     transform: rotate(0deg);
-    background-color: rgb(63, 0, 236);
+    z-index: 5;
   }
   60% {
     opacity: 1;
+    z-index: 5;
+  }
+  99% {
+    z-index: 5;
   }
   100% {
     transform: rotate(1800deg);
     opacity: 0;
+    z-index: 5;
+    z-index: -111;
   }
 }
 .header {
