@@ -87,7 +87,7 @@ main {
 }
 /*****Restaurant*****/
 .restaurant {
-  background-color: #f7f7f7;
+  background-color: #f6f6f6;
   padding: 54px 18px 66px 17px;
 }
 .restaurant__titre {
@@ -105,7 +105,7 @@ main {
   height: 251px;
   width: 100%;
   position: relative;
-  background-color: white;
+  background: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -209,8 +209,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: conic-gradient(rgba(0, 0, 0, 0) 10%, #766DF4);
-  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 8px), #000 0);
+  background: conic-gradient(rgba(0, 0, 0, 0) 10%, #99E2D0);
   animation: s3 3s linear 1 none;
   animation-fill-mode: forwards;
 }
@@ -310,7 +309,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #F7F7F7;
+  background-color: #f6f6f6;
 }
 .reservation__emplacement {
   display: flex;
@@ -356,7 +355,7 @@ main {
 .fonctionnement__carte {
   display: flex;
   flex-direction: row;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 20px;
   margin-left: 12px;
   height: 100%;
@@ -517,7 +516,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: -55px;
-  background-color: #F7F7F7;
+  background-color: #f6f6f6;
   height: auto;
   border-radius: 40px 40px 0 0;
   padding: 0 13px;
@@ -597,7 +596,7 @@ body {
   flex-direction: row;
   background-color: white;
   overflow: hidden;
-  height: 66px;
+  height: 69px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
@@ -616,6 +615,8 @@ body {
   font-weight: 300;
 }
 .menu__prix {
+  display: flex;
+  align-items: flex-end;
   font-size: 15px;
   font-weight: 700;
 }
