@@ -48,9 +48,11 @@ main {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
+  transition: opacity 0.3s ease-in-out;
   opacity: 0;
 }
 .restaurant__coeur-gradient:hover {
+  transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
 
@@ -365,7 +367,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  translate: -12px 100%;
+  transform: translate(-12px, 100%);
   margin: 0;
   background-color: #9356DC;
   height: 24px;
@@ -378,7 +380,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  translate: 8px;
+  padding-left: 8px;
   gap: 20px;
 }
 

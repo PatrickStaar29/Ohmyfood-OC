@@ -38,8 +38,10 @@
     background: linear-gradient(193.33deg, $violet -11.44%, $rose 123.93%);
     background-clip: text;
     -webkit-background-clip: text;
+    transition:opacity 0.3s ease-in-out;
     opacity: 0;
     &:hover{
+        transition:opacity 0.3s ease-in-out;
         opacity: 1;
     }
 }
